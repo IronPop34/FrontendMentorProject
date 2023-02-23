@@ -1,0 +1,12 @@
+.fullWidth {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 274px;
+    height: 568px;    
+    background: #483EFF;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
