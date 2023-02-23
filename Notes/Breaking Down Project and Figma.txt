@@ -1,0 +1,131 @@
+
+:root {
+	--bg: #EFF5FF;
+	--border: #D6D9E6;
+	--denim: #022959;
+	--grey: #9699AA;
+	--light-blue: #ABBCFF;
+	--light-grey: #D6D9E6;
+	--organge: #FFAF7E;
+	--pink: #F9818E;
+	--purple: #483EFF;
+	--red-errors: #EE374A;
+	--sky-blue: #BEE2FD;
+	--very-light-grey: #F8F9FF;
+	--white: #FFFFFF;
+}
+
+* {
+	font-family: Ubuntu;
+}
+
+.heading {
+	font-size: 32px;
+	line-height: auto;
+}
+.body-l {
+	font-size: 16px;
+	line-height: 25px;
+}
+.body-m {
+	font-size: 14px;
+	line-height: auto;
+}
+.body-s {
+	font-size: 12px;
+	line-height: auto;
+}
+
+
+button {
+	background-color: var(--denim);
+	color: var(--very-light-grey);
+	border-radius: 8px;
+}
+
+
+---------------------------------------------------
+
+Component Breakdown
+
+Components - Step 1
+- Tracker (folder)
+	- Tracker (component)
+	- Step (component - reusable)
+		- number
+		- step content
+			- step number
+			- step label
+- Form (folder)
+	- Form (component)
+	- Header
+		-Personal Info Title
+			-Please provide
+	-Input Feilds (Collect Data)
+		-Name
+		-Email Address
+		-Phone Number
+	-Button (Move to next step)
+
+Proposed Counter - AA
+- Form (folder)
+	- Form (component)
+	- Header
+		- Title
+		- Subheading
+	- Inputs ( reusable component )
+		- label
+		- input:text
+	- Button ( reusable component )
+
+Components - Step 2
+- Same tracker from Step 1
+	-Header (Same as Step 1)
+		-Title
+		-Subheading
+	-Plan
+		-NgFor Plan type
+			-Plan Icon
+			-Name Plan
+			-Price
+		-Toggle (Sybling component)
+			-Data binder
+			-Monthly & Yearly
+	-Button
+		-Next Step
+		-Go Back
+
+Components - Step 3
+- Same tracker from Step 1
+	-Header (Same as step 1)
+		-Title
+		-Subheading
+	-Additional Services
+		-NgFor Services Type
+			-Check Box
+			-Plan Name
+				-Plan Description
+			-Plan Price
+	-Button (Same as Step 2)
+		-Next Step
+		-Go Back
+
+Component - Step 4
+-Same tracker from Step 1
+	-Header (Same as step 1)
+		-Title
+		-Subheading
+	-Summary
+		-Plan Name(monthly or yearly price)
+		-Additional Plan Price
+		-Total Price (monthly or yearly price)
+	-Button (Same as Step 2)
+		-Go Back (Primary)
+		-Confirm (Secondary, if step does not equal to 4)
+		-OnClickEvent
+		-OnSubmit clickEvent to Thank You Page
+
+
+display: none;
+vs
+visibility: hidden;
