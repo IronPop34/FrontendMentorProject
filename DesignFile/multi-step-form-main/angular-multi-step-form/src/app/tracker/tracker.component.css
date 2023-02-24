@@ -8,5 +8,82 @@
     height: 568px;    
     background: #483EFF;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: #FFFFFF;    
+}
+
+.shapeOrangeOval {
+    position: absolute;
+    width: 134px;
+    height: 134px;       
+    top: 413.89px;
+    bottom: 37.11px;
+    right: 206.7px;
+    border-radius: 80px;
+    background: #FFAF7E;
+}
+
+.shapePinkOval {
+    position: absolute;
+    width: 262.39px;
+    height: 164px;
+    left: 151.54;
+    right: -85.33px;    
+    top: 458.35px;
+    bottom: 428.69px;    
+    background: #F9818E;
+    transform: rotate(-29deg);
+    border-radius: 80px;
+}
+
+.shapeBlueOval {
+    position: absolute;
+    width: 337.25px;
+    height: 238px;
+    left: -174px;
+    right: 687.8px;
+    top: 396px;
+    bottom: 39.44%;    
+    background: #6259FF;
+    transform: rotate(55deg);
+    border-radius: 90px;
+}
+
+.shapeWhiteOvalOne {
+    position: absolute;
+    width: 17.61px;    
+    top: 458.29px;
+    bottom: 114.9px;
+    left: 155.3px;
+    right: 748.09;
+    border: 3px solid #FFFFFF;
+    border-radius: 90px;
+    transform: rotate(-55deg);
+}
+
+.shapeWhiteOvalTwo {
+    position: absolute;
+    width: 17.61px;    
+    top: 460.29px;
+    bottom: 114.9px;
+    left: 190.3px;
+    right: 748.09;
+    border: 3px solid #FFFFFF;
+    border-radius: 90px;
+    transform: rotate(35deg);
+}
+
+.shapeWhiteOvalThree {
+    position: absolute;
+    width: 17.61px;    
+    top: 500.29px;
+    bottom: 90.9px;
+    left: 172.3px;
+    right: 748.09;
+    border: 3px solid #FFFFFF;
+    border-radius: 90px;
+    transform: rotate(-75deg);
+}
+
+.progress-text {
+    line-height: 0.1;
 }
