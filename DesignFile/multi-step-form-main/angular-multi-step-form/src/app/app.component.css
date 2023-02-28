@@ -14,8 +14,8 @@
 	--white: #FFFFFF
 }
 
-* {
-	font-family: Ubuntu;
+* {	
+	font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -27,22 +27,4 @@ body {
 	background: #FFFFFF;
 	box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
 	border-radius: 15px;
-}
-
-button {
-	position: absolute;
-	width: 123px;
-	height: 48px;
-	left: 73.5%;
-	right: 0%;
-	top: 80%;
-	bottom: 0%;
-	background: #022959;
-	border-radius: 8px;
-	position: absolute;
-	color: #FFFFFF;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 18px;
 }

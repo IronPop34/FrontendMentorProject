@@ -1,89 +1,112 @@
-.fullWidth {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    width: 274px;
-    height: 568px;    
-    background: #483EFF;
-    border-radius: 10px;
-    color: #FFFFFF;    
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;  
 }
 
-.shapeOrangeOval {
-    position: absolute;
-    width: 134px;
-    height: 134px;       
-    top: 413.89px;
-    bottom: 37.11px;
-    right: 206.7px;
-    border-radius: 80px;
-    background: #FFAF7E;
+* {
+  box-sizing: border-box;
 }
 
-.shapePinkOval {
-    position: absolute;
-    width: 262.39px;
-    height: 164px;
-    left: 151.54;
-    right: -85.33px;    
-    top: 458.35px;
-    bottom: 428.69px;    
-    background: #F9818E;
-    transform: rotate(-29deg);
-    border-radius: 80px;
+.container {
+  text-align: center;
 }
 
-.shapeBlueOval {
-    position: absolute;
-    width: 337.25px;
-    height: 238px;
-    left: -174px;
-    right: 687.8px;
-    top: 396px;
-    bottom: 39.44%;    
-    background: #6259FF;
-    transform: rotate(55deg);
-    border-radius: 90px;
+.progress-container {
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;    
+    top: 56px;
+    left: 48px;
+    right: 859px;
+    height: 200px;
+  }
+
+.progress-container::before {
+  content: ""; /* Mandatory with ::before */
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
 }
 
-.shapeWhiteOvalOne {
-    position: absolute;
-    width: 17.61px;    
-    top: 458.29px;
-    bottom: 114.9px;
-    left: 155.3px;
-    right: 748.09;
-    border: 3px solid #FFFFFF;
-    border-radius: 90px;
-    transform: rotate(-55deg);
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
 }
 
-.shapeWhiteOvalTwo {
-    position: absolute;
-    width: 17.61px;    
-    top: 460.29px;
-    bottom: 114.9px;
-    left: 190.3px;
-    right: 748.09;
-    border: 3px solid #FFFFFF;
-    border-radius: 90px;
-    transform: rotate(35deg);
+.circle {
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+  }
+
+.circle.active {
+  border-color: var(--line-border-fill);
 }
 
-.shapeWhiteOvalThree {
+.btnPrev {
     position: absolute;
-    width: 17.61px;    
-    top: 500.29px;
-    bottom: 90.9px;
-    left: 172.3px;
-    right: 748.09;
-    border: 3px solid #FFFFFF;
-    border-radius: 90px;
-    transform: rotate(-75deg);
+    left: 376px;
+    right: 490px;
+    top: 515px;
+    bottom: 32px;
+    width: 128px;    
+    height: 48px;
+    border-radius: 8px;    
+    color: #9699AA;
+    font-family: 'Ubuntu', sans-serif;    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+} 
+
+.btnNext {
+    position: absolute;
+    left: 685px;
+    right: 100px;
+    top: 514px;
+    bottom: 32px;
+    width: 128px;    
+    height: 48px;
+    background: #022959;
+    border-radius: 8px;    
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
 }
 
-.progress-text {
-    line-height: 0.1;
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
 }
